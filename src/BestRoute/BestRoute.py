@@ -160,8 +160,6 @@ def getDistBetweenTwoPoints(L1,L2,df):
 
 
 
-
-
 if __name__ == "__main__":
 
 	trips = pd.read_csv('../data/trips.csv')
@@ -171,6 +169,7 @@ if __name__ == "__main__":
 	edges = trips[['Origin','Destination','dist']].values.tolist()
 	
 	# Simple Graphy BenchMark	
+	print("BenchmarkCase with Simple Graph")
 	simpleGraphBenchmark(RouteFinder)
 
 	# Example 1

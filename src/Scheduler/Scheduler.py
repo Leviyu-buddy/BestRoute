@@ -75,7 +75,6 @@ def getSchedule(work_beg,work_end,work_days,loading_time,departure_time,loading_
 
 
 
-
 if __name__ == '__main__':
 	
 	Example1(getSchedule)
