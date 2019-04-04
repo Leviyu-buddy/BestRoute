@@ -68,14 +68,12 @@ def findSecondThridShortest(edges,paths,start,end):
 		newEdges = removeEdge(newEdges,path)
 
 		cost,path = dijkstra(newEdges, start, end)
-
 		if cost not in alt:
 			alt[cost] = [path]
 		elif alt[cost][0] == path:
 			continue
 		else:
 			alt[cost].append(path)
-	
 	# rank all path based on cost value
 	alt_rank = []
 	for key in sorted(alt):
