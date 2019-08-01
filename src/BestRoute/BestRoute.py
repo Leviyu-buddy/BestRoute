@@ -9,8 +9,12 @@ sys.path.append(os.getcwd())
 from testcases.testcases import *
 
 def flattenList(l):
+    '''
+    This is used to flatten List
+    '''
 	flat_list = []
 	def helper(l):
+            # good function
 		for i in l:
 			if isinstance(i, list):
 				helper(i)
